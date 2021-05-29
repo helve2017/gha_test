@@ -1,7 +1,9 @@
 name: Cron Job
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: "*/10 * * * *"
+  # 手動実行用の記述
+  workflow_dispatch:
 jobs:
   my_cron_job:
     name: cron job
