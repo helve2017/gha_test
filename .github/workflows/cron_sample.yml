@@ -1,0 +1,11 @@
+name: Cron Job
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+jobs:
+  my_cron_job:
+    name: cron job
+    runs-on: ubuntu-latest
+    steps:
+    - name: Hello My Cron Job
+      run: echo 'Hello, My Cron Job!'
