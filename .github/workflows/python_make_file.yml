@@ -1,10 +1,10 @@
 name: Python Make File
 
 on:
-  schedule:
-    - cron: '*/60 * * * *'
+#  schedule:
+#    - cron: '*/60 * * * *'
   # 手動実行用の記述
-  workflow_dispatch:
+#  workflow_dispatch:
 jobs:
   pytest:
     name: Run tests with pytest
